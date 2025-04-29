@@ -25,3 +25,18 @@ brew update && brew upgrade
 
 Outils concernés : Xcode Command Line Tools, Homebrew.
 Pourquoi : beaucoup de dépendances IA (numpy, torch) ont des parties C/C++ qui nécessitent un compilateur.
+
+## Phase 0.3 — Installation de Python 3.12 avec pyenv
+Objectif : gérer plusieurs versions de Python sans toucher au Python système d’Apple.
+
+```
+brew install pyenv
+echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+exec $SHELL                   # recharge le shell
+pyenv install 3.12.3
+pyenv global 3.12.3
+python --version              # doit maintenant afficher 3.12.3
+```
+
+Outil : pyenv.
+Pourquoi : pouvoir changer de version de Python à la demande et reconstruire facilement l’environnement.
