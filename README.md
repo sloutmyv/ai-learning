@@ -72,7 +72,7 @@ pip install -r requirements.txt
 Outils : venv, pip.
 Pourquoi : garantir la reproductibilité et éviter toute pollution du système.
 
-## hase 0.6 — Configuration VS Code
+## Phase 0.6 — Configuration VS Code
 Objectif : profiter d’un IDE complet (auto-complétion, formatage, lint).
 
 Installer les extensions : Python, Jupyter, GitLens, Black Formatter, Ruff.
@@ -88,3 +88,7 @@ Créer .vscode/settings.json :
 ```
 Outil : VS Code + extensions.
 Pourquoi : gagner du temps grâce au formatage automatique et aux alertes lint.
+
+## Phase 0.7 — Exercice final : script d’automatisation + test
+setup_env.py
+tests/test_versions.py
