@@ -14,3 +14,14 @@ brew uninstall python@3.13 # retire le Python Homebrew s’il est en 3.13
 
 Outils concernés : Terminal macOS, Homebrew.
 Pourquoi : éviter les conflits de version et partir d’un environnement propre.
+
+## Phase 0.2 — Outils système
+Objectif : disposer des outils de compilation nécessaires à Python et aux bibliothèques natives.
+
+```
+xcode-select --install     # installe gcc/clang et make
+brew update && brew upgrade
+```
+
+Outils concernés : Xcode Command Line Tools, Homebrew.
+Pourquoi : beaucoup de dépendances IA (numpy, torch) ont des parties C/C++ qui nécessitent un compilateur.
