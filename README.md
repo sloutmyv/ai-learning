@@ -40,3 +40,15 @@ python --version              # doit maintenant afficher 3.12.3
 
 Outil : pyenv.
 Pourquoi : pouvoir changer de version de Python à la demande et reconstruire facilement l’environnement.
+
+## Phase 0.4 — Installation du compilateur Rust
+Objectif : régler à la source l’erreur « can’t find Rust compiler » que pip affiche pour certaines libs (ex. tiktoken).
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source ~/.cargo/env
+rustc --version               # v1.78.0 ou supérieur
+```
+
+Outil : rustup.
+Pourquoi : plusieurs bibliothèques IA modernes possèdent des extensions Rust pour la vitesse.
