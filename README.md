@@ -52,3 +52,22 @@ rustc --version               # v1.78.0 ou supérieur
 
 Outil : rustup.
 Pourquoi : plusieurs bibliothèques IA modernes possèdent des extensions Rust pour la vitesse.
+
+## Phase 0.5 — Création du projet et de l’environnement virtuel
+Objectif : isoler les dépendances du cursus dans un seul dossier.
+
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+cat << 'EOF' > requirements.txt
+numpy
+pandas
+torch
+transformers==2.11
+EOF
+pip install -r requirements.txt
+```
+
+Outils : venv, pip.
+Pourquoi : garantir la reproductibilité et éviter toute pollution du système.
