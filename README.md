@@ -71,3 +71,20 @@ pip install -r requirements.txt
 
 Outils : venv, pip.
 Pourquoi : garantir la reproductibilité et éviter toute pollution du système.
+
+## hase 0.6 — Configuration VS Code
+Objectif : profiter d’un IDE complet (auto-complétion, formatage, lint).
+
+Installer les extensions : Python, Jupyter, GitLens, Black Formatter, Ruff.
+
+Créer .vscode/settings.json :
+```
+{
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "ruff.enable": true
+}
+```
+Outil : VS Code + extensions.
+Pourquoi : gagner du temps grâce au formatage automatique et aux alertes lint.
