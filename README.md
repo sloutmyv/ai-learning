@@ -1,5 +1,7 @@
 # ai-learning
 
+# Phase 0 – Pré-requis & outillage (macOS)
+
 ## Phase 0.1 — Inventaire & nettoyage
 
 Objectif : connaître l’état de votre machine et supprimer un éventuel Python 3.13 Homebrew qui risque de gêner l’installation propre.
@@ -92,3 +94,23 @@ Pourquoi : gagner du temps grâce au formatage automatique et aux alertes lint.
 ## Phase 0.7 — Exercice final : script d’automatisation + test
 setup_env.py
 tests/test_versions.py
+
+# Phase 1 – Python scientifique
+
+But global : manipuler des tableaux numériques, des jeux de données tabulaires, puis représenter visuellement vos résultats.
+Livrable final : un mini-projet d’analyse exploratoire (notebook + README) commité et testé dans le CI.
+
+## Phase 1.1 — Préparer l’espace de travail Jupyter
+Objectif : disposer d’un dossier clair pour les notebooks et d’un lanceur Jupyter prêt à l’emploi.
+
+# Créer le dossier et installer JupyterLab
+```
+mkdir -p notebooks
+pip install --upgrade jupyterlab ipywidgets
+```
+# Lancer l’interface
+```
+jupyter lab
+```
+Outils : JupyterLab (éditeur notebook moderne), ipywidgets (contrôles interactifs).
+Pourquoi : un environnement interactif est indispensable pour l’exploration de données.
