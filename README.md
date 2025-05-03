@@ -114,3 +114,11 @@ jupyter lab
 ```
 Outils : JupyterLab (éditeur notebook moderne), ipywidgets (contrôles interactifs).
 Pourquoi : un environnement interactif est indispensable pour l’exploration de données.
+
+## Phase 1.2 — Fondamentaux NumPy
+Objectif : comprendre les tenseurs, le broadcasting et la vectorisation.
+
+Créez notebooks/01_numpy_basics.ipynb.
+Exercice : écrire une fonction poly_features(x, degree) vectorisée sans boucle Python.
+Outil : NumPy.
+Pourquoi : la base calculatoire de l’IA (PyTorch reprend les mêmes concepts).
